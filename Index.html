@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adrija ❤️ Akash</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+text-align:center;
+padding:40px;
+color:#333;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:600px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+color:#e63946;
+}
+
+.clause{
+text-align:left;
+margin:12px 0;
+font-size:17px;
+}
+
+input{
+padding:10px;
+margin:10px;
+border-radius:10px;
+border:1px solid #ccc;
+width:80%;
+}
+
+button{
+background:#e63946;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:20px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#c9182b;
+}
+
+#result{
+margin-top:25px;
+font-size:22px;
+font-weight:bold;
+color:#2a9d8f;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💍 Adrija & Akash's Unofficial Marriage Contract</h1>
+
+<p>By signing this totally serious (but not legally binding) agreement, we promise to:</p>
+
+<div class="clause">🍟 Share fries even when we say we don't want any</div>
+<div class="clause">🎬 Watch movies together</div>
+<div class="clause">😂 Laugh at each other's bad jokes</div>
+<div class="clause">❤️ Support each other always</div>
+<div class="clause">😜 Annoy each other forever</div>
+
+<br>
+
+<h3>Sign Below</h3>
+
+<input id="person1" placeholder="Adrija's Signature">
+<br>
+
+<input id="person2" placeholder="Akash's Signature">
+<br><br>
+
+<button onclick="marry()">Declare Marriage</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function marry(){
+
+let p1 = document.getElementById("person1").value;
+let p2 = document.getElementById("person2").value;
+
+if(p1 && p2){
+
+document.getElementById("result").innerHTML =
+"🎉 Congratulations Adrija & Akash! You are now unofficially husband and wife! 💍❤️";
+
+}
+
+else{
+
+document.getElementById("result").innerHTML =
+"Both partners must sign the contract!";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
